@@ -1,0 +1,150 @@
+/* ===== Global Reset ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ===== Page Background ===== */
+body {
+    background: linear-gradient(135deg, #f0f4ff, #e6ebff);
+    min-height: 100vh;
+}
+
+/* ===== Main Container ===== */
+.container {
+    width: 90%;
+    max-width: 900px;
+    margin: 50px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* ===== Headings ===== */
+h1 {
+    text-align: center;
+    margin-bottom: 10px;
+    color: #2c3e50;
+}
+
+h3 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #555;
+}
+
+/* ===== Buttons ===== */
+button, .btn {
+    background: #4a6cff;
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 6px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+button:hover, .btn:hover {
+    background: #3b5bdb;
+}
+
+/* ===== Candidate Card ===== */
+.candidate {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    background: #f8f9ff;
+    border: 1px solid #ddd;
+}
+
+.candidate img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.candidate span {
+    flex: 1;
+    margin-left: 15px;
+    font-size: 16px;
+    color: #333;
+}
+
+/* ===== Winner Highlight ===== */
+.winner {
+    border: 2px solid #28a745;
+    background: #eaffea;
+}
+
+/* ===== Links ===== */
+a {
+    color: #4a6cff;
+    text-decoration: none;
+    margin-right: 15px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* ===== Center Utility ===== */
+.center {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* ===== Admin Form Styling ===== */
+.admin-form {
+    margin-bottom: 35px;
+}
+
+.admin-form form {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* Text inputs: fixed width */
+.admin-form input[type="text"] {
+    width: 220px;
+    padding: 12px;
+    font-size: 15px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    height: 42px;
+}
+
+/* File input: dynamic width */
+.admin-form input[type="file"] {
+    flex: 1;
+    min-width: 260px;
+    padding: 8px;
+    font-size: 14px;
+    height: 42px;
+}
+
+/* Centered Add Candidate button */
+.admin-form button {
+    height: 42px;
+    padding: 0 28px;
+    font-size: 15px;
+    margin: 18px auto 0 auto;
+    display: block;
+    white-space: nowrap;
+}
+
+/* Divider */
+.divider {
+    margin: 30px 0 25px;
+    border: none;
+    border-top: 1px solid #ddd;
+}
